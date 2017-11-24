@@ -15,19 +15,22 @@ participant Owner identified by ownerId {
     o String ownerNationality    
 }
 
-asset Certifcate identified by certificateId {
+asset Certificate identified by certificateId {
     o String certificateId
     o String description
     o String type
     o DateTime issueDate
-    --> Issuer
-    --> Owner
+    --> Issuer issuer
+    --> Owner owner
 }
+
 transaction issueCertificate {
     --> Certificate certificate
     --> Owner newOwner
 }
 
 event EventIssueNotification {
-    --> Certifcate certificate
+    --> Certificate certificate
 }
+
+
