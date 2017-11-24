@@ -1,0 +1,22 @@
+{
+  "name": "public_education",
+  "version": "0.0.1",
+  "description": "description",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "team",
+  "email": "test@test",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "composer-admin": "latest",
+    "composer-client": "latest",
+    "composer-common": "latest",
+    "composer-connector-embedded": "latest",
+    "chai": "latest",
+    "eslint": "latest",
+    "istanbul": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest"
+  }
+}
