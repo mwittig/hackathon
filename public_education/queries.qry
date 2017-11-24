@@ -1,0 +1,9 @@
+query showCertificatesByOwner
+{
+    description: "Get all certificates of an owner"
+
+    statement:
+        SELECT org.acme.biznet.Certificate
+          WHERE (owner in (SELECT owner WHERE ownerName == "Sophia Loren"))
+            /*ORDER BY [issueDate ASC]*/
+}
