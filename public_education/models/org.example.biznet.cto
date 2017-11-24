@@ -1,23 +1,33 @@
 /**
- * Write your model definitions here
+ * Public Education Cerificate Networks
  */
+namespace org.acme.biznet
 
-namespace org.example.biznet
-
-participant User identified by email {
-  o String email
+participant Issuer identified by issuerId {
+    o String issuerId
+    o String issuerName
+    o String issuerCountry    
 }
 
-participant Owner identified by name {
-  o String name
+participant Owner identified by ownerId {
+    o String ownerId
+    o String ownerName
+    o String ownerNationality    
 }
 
-asset SampleAsset identified by assetId {
-  o String assetId
-  o String value
+asset Certifcate identified by certificateId {
+    o String certificateId
+    o String description
+    o String type
+    o DateTime issueDate
+    --> Issuer
+    --> Owner
+}
+transaction issueCertificate {
+    --> Certificate certificate
+    --> Owner newOwner
 }
 
-transaction ChangeAssetValue {
-  o String newValue
-  --> Asset relatedAsset
+event EventIssueNotification {
+    --> Certifcate certificate
 }
