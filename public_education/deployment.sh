@@ -17,4 +17,5 @@ composer card import --file networkadmin.card
 
 composer network ping --card admin@public_education
 
-composer-rest-server
+composer-rest-server --card admin@public_education --namespaces never
+
