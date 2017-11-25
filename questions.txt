@@ -1,0 +1,37 @@
+Business problem
+- need for verification of degrees etc.
+
+Why Blockchain?
+- a lot of enterprises and universities need to check degrees/certs
+    --> distriuted ledger
+- important data
+    --> trust
+- exchange of valid certificates through different educational systems
+
+Where to sell?
+- first: enterprises
+
+Read ops recent or historical?
+- recent + historical
+    --> need to look for alle degrees a person has
+    --> time consuming but necessary
+    --> query solution can't be implemented yet
+
+Are there other solutions already?
+- yes
+    --> but without Blockchain
+    --> no well-known solutions
+    --> just small approaches
+
+Expansion
+(- validation of degree)
+- faster query search implementation
+- scan of certificates/degrees
+
+GDPR (General Data Protection Regulation)
+- thinking about regulations is important
+- data can't be inspected without the owner's permission
+
+
+
+
