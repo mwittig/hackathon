@@ -4,6 +4,6 @@ query showCertificatesByOwner
 
     statement:
         SELECT org.acme.biznet.Certificate
-          WHERE (owner == _$nameParam)
+          WHERE (owner.name == _$nameParam)
             /*ORDER BY [issueDate ASC]*/
 }
