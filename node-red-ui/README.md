@@ -21,11 +21,13 @@ node-red
 
 ### Installation of node-red plugins
 
-Make sure `node-red` has been run once. 
+Make sure `node-red` has been run once. Note, a patched version
+of the node-red-composer plugin is used which add getAll/resolveAll
+functionality for the retrieve action.
 
 ```
 cd ~/.node-red
-npm install node-red-contrib-composer
+npm install ~/hackathon/node-red-ui/node-red-contrib-composer-0.0.10.tgz 
 npm install node-red-dashboard
 ```
 
