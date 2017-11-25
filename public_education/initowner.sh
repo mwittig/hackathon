@@ -8,7 +8,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  
    "$class": "org.acme.biznet.Owner",  
    "ownerId": "2",  
-   "ownerName": "Hugo Egon Balder",  
+   "ownerName": "Heiko Berger",  
    "ownerNationality": "Deutschland"  
  }' 'http://localhost:3000/api/Owner'
 

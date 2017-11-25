@@ -1,7 +1,7 @@
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  
    "$class": "org.acme.biznet.Certificate",  
    "certificateId": "9",  
-   "description": "Master of Computer Science",  
+   "description": "Informatik",  
    "type": "Master of Science",  
    "issueDate": "2017-11-24T15:55:39.534Z",  
    "issuer": "org.acme.biznet.Issuer#1",
@@ -11,7 +11,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  
    "$class": "org.acme.biznet.Certificate",  
    "certificateId": "2",  
-   "description": "Master of Electrical Engineering",  
+   "description": "Biotechnologie",  
    "type": "Master of Science",  
    "issueDate": "2017-09-24T15:55:39.534Z",  
    "issuer": "org.acme.biznet.Issuer#2",
@@ -21,7 +21,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  
    "$class": "org.acme.biznet.Certificate",  
    "certificateId": "3",  
-   "description": "Master of Computer Science",  
+   "description": "Elektrotechnik",  
    "type": "Master of Science",  
    "issueDate": "2017-10-24T15:55:39.534Z",  
    "issuer": "org.acme.biznet.Issuer#7",
@@ -45,5 +45,25 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    "type": "Gesellenbrief",  
    "issueDate": "2002-06-22T15:55:39.534Z",  
    "issuer": "org.acme.biznet.Issuer#5",
+   "owner": "org.acme.biznet.Owner#2"
+ }' 'http://localhost:3000/api/Certificate'
+
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  
+   "$class": "org.acme.biznet.Certificate",  
+   "certificateId": "5e33a7",  
+   "description": "Fahrzeugtechnik",  
+   "type": "Master of Science",  
+   "issueDate": "2002-06-22T15:55:39.534Z",  
+   "issuer": "org.acme.biznet.Issuer#1",
+   "owner": "org.acme.biznet.Owner#2"
+ }' 'http://localhost:3000/api/Certificate'
+
+ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  
+   "$class": "org.acme.biznet.Certificate",  
+   "certificateId": "5e44a7",  
+   "description": "Informatik Aufbaustudium",  
+   "type": "Master of Science",  
+   "issueDate": "2002-06-22T15:55:39.534Z",  
+   "issuer": "org.acme.biznet.Issuer#1",
    "owner": "org.acme.biznet.Owner#2"
  }' 'http://localhost:3000/api/Certificate'
